@@ -17,30 +17,30 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validate Gradle Wrapper
-        uses: gradle/actions/wrapper-validation@v3
-
-      - name: Set up Java JDK ${{ vars.JAVA_JDK_VERSION }}
-        uses: actions/setup-java@v4
-        with:
-          java-version: '${{ vars.JAVA_JDK_VERSION }}'
-          distribution: "zulu"
-
-      - name: Caching Kotlin/Native tooling
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.konan
-          key: ${{ runner.os }}-${{ hashFiles('**/.lock') }}
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-
-      - name: Actualize yarn lock file
-        run: ./gradlew kotlinUpgradeYarnLock
-
-      #      - name: Build with Gradle
-      #        run: ./gradlew copyDemoSamples
+      #      - name: Validate Gradle Wrapper
+      #        uses: gradle/actions/wrapper-validation@v3
+      #
+      #      - name: Set up Java JDK ${{ vars.JAVA_JDK_VERSION }}
+      #        uses: actions/setup-java@v4
+      #        with:
+      #          java-version: '${{ vars.JAVA_JDK_VERSION }}'
+      #          distribution: "zulu"
+      #
+      #      - name: Caching Kotlin/Native tooling
+      #        uses: actions/cache@v3
+      #        with:
+      #          path: |
+      #            ~/.konan
+      #          key: ${{ runner.os }}-${{ hashFiles('**/.lock') }}
+      #
+      #      - name: Setup Gradle
+      #        uses: gradle/actions/setup-gradle@v4
+      #
+      #      - name: Actualize yarn lock file
+      #        run: ./gradlew kotlinUpgradeYarnLock
+      #
+      #            - name: Build with Gradle
+      #              run: ./gradlew copyDemoSamples
 
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
