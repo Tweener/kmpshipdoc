@@ -6,6 +6,13 @@ docs_dir: "docs"
 repo_name: "kmp-ship"
 repo_url: https://github.com/TweenerLabs/kmp-ship
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/TweenerLabs/kmp-ship
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/KMPShip
+
 extra_css:
   - stylesheets/extra.css
 
