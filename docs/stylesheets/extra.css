@@ -1,6 +1,5 @@
 :root  > * {
     --md-primary-fg-color: #6419e6;
-
     --md-accent-fg-color: #E8B545;
 }
 
@@ -9,7 +8,18 @@
   --md-default-bg-color: #FFFFFF;
 }
 
+[data-md-color-scheme="default"] .md-header {
+    background-color: #ffffff; /* Light header color */
+    color: #000000; /* Optional: header text color */
+  }
+
 /* Dark mode */
 [data-md-color-scheme="slate"] {
-  --md-default-bg-color: #242530;
+  --md-default-bg-color: #292a36;
+  --md-default-fg-color: #D9D9D9;
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: #242530;
+  --md-default-fg-color: #D9D9D9;
 }
