@@ -1,0 +1,49 @@
+site_name: KMPShip
+site_description: "The Kotlin/Compose Multiplatform boilerplate to quickly ship Android and iOS apps."
+site_url: https://kmpship.app/
+docs_dir: "docs"
+
+repo_name: "kmp-ship"
+repo_url: https://github.com/TweenerLabs/kmp-ship
+
+extra_css:
+  - stylesheets/extra.css
+
+theme:
+  name: material
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - navigation.expand
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - "Overview": index.md

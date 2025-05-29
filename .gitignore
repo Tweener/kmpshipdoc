@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# Android Studio
+.idea/
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
