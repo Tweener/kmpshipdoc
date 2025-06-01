@@ -53,6 +53,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true
 
 nav:
   - "Get started": index.md
+  - "Configuration": configuration.md

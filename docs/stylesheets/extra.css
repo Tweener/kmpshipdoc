@@ -31,3 +31,9 @@
   background-color: #242530;
   --md-default-fg-color: #D9D9D9;
 }
+
+/* Other styles */
+
+.text-green {
+  color: #00b894;
+}

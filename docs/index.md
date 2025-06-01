@@ -18,7 +18,9 @@ Install KDoctor (if not already installed) and in your terminal, run:
 kdoctor
 ```
 
-You should get a ✅ All systems are go message. If anything is missing (like Xcode or Android Studio), KDoctor will let you know what to install.
+You should get a <span class="text-green">[✓]</span> on all diagnostics and the following message if no problems are found: `Your system is ready for Kotlin Multiplatform Mobile Development!`
+
+If anything is missing (like Xcode or Android Studio), KDoctor will let you know what to install.
 
 ---
 
@@ -30,21 +32,66 @@ Follow these steps to get KMPShip set up locally:
 
 ```bash
 git clone git@github.com:TweenerLabs/kmp-ship.git [YOUR_APP_NAME]
+cd [YOUR_APP_NAME]
 ```
 
 Replace `[YOUR_APP_NAME]` with the desired name for your project folder.
 
+
+### Configure Git remotes
+
+To keep your local repository in sync with the original KMPShip repository, you need to set up a remote tracking branch.
+
+- First, rename the default Git remote to `upstream`:
+
+```bash
+git remote rename origin upstream
+```
+
+- Now, add your own repository as the new `origin`:
+
+```bash
+git remote add origin [YOUR_SSH_REMOTE_REPO_URL]
+```
+
+Replace `[YOUR_SSH_REMOTE_REPO_URL]` with the SSH URL of your own GitHub repository (ie. `git@github.com:Org/my-repo.git`).
+
+- Remove the upstream tracking information:
+
+```bash
+git branch --unset-upstream
+```
+
+- Finally, push the project to your own repository:
+
+````bash
+git push -u origin main
+````
+
 ---
 
-### Run the project
+### Keep your project up to date
+
+!!! note
+
+    Make sure to **regularly keep** the `main` branch in sync with the original KMPShip repository. This way, you can easily pull updates and new features as they are released.
+
+```bash
+git fetch upstream
+git merge upstream/main
+```
+
+## Run the project
 
 Open the project in **Android Studio** and run the app using the provided run configurations:
 
 * To run the **Android** app, start the `androidApp` run configuration.
 * To run the **iOS** app, start the `iosApp` run configuration.
 
-Then, open the Xcode workspace located at `iosApp/iosApp.xcworkspace` (not the `.xcodeproj` file), select the iosApp target, and run it on a simulator or device to ensure everything works correctly in Xcode too.
+Then, open the Xcode workspace located at `iosApp/iosApp.xcodeproj`, select the iosApp target, and run it on a simulator or device to ensure everything works correctly in Xcode too.
 
 ---
 
-Once you've completed these steps, you're ready to dive into KMPShip and start building!
+Congratulations! 👏 The initial setup is done and you already have your app up and running on Android and iOS.
+
+Now, let's configure the app.
