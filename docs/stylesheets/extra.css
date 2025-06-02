@@ -1,10 +1,11 @@
 :root  > * {
-    --md-primary-fg-color: #6419e6;
     --md-accent-fg-color: #E8B545;
 }
 
 /* Light mode */
 [data-md-color-scheme="default"] {
+    --md-primary-fg-color: #6419e6;
+
     --md-default-bg-color: #FFFFFF;
 
     /* Code block colors */
@@ -17,18 +18,11 @@
     color: #000000; /* Optional: header text color */
 }
 
-[data-md-color-scheme="default"] .custom-inline-links a {
-  color: #6419e6; /* text color */
-  background-color: transparent;
-}
-
-[data-md-color-scheme="default"] .custom-inline-links a:hover {
-    color: #E8B545;
-    text-decoration: none;
-}
 
 /* Dark mode */
 [data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #9f7aea;
+
     --md-default-bg-color: #292a36;
     --md-default-fg-color: #D9D9D9;
 
@@ -40,16 +34,6 @@
 [data-md-color-scheme="slate"] .md-header {
     background-color: #242530;
     --md-default-fg-color: #D9D9D9;
-}
-
-[data-md-color-scheme="slate"] .custom-inline-links a {
-    color: #9f7aea; /* a lighter purple for contrast */
-    background-color: transparent;
-}
-
-[data-md-color-scheme="slate"] .custom-inline-links a:hover {
-    color: #E8B545;
-    text-decoration: none;
 }
 
 /* Other styles */

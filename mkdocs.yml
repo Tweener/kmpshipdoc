@@ -42,6 +42,8 @@ theme:
   features:
     - content.code.copy
     - navigation.expand
+    - navigation.tracking
+    - navigation.indexes
 
 markdown_extensions:
   - admonition
@@ -64,4 +66,12 @@ markdown_extensions:
 nav:
   - "Get started": index.md
   - "Customization": customization.md
-  - "Features": features.md
+  - "App architecture": architecture.md
+  - "Features":
+      - features/index.md
+      - "Authentication": features/authentication.md
+      - "Navigation": features/navigation.md
+      - "Payments": features/payments.md
+      - "Notifications": features/notifications.md
+      - "In-App Reviews": features/inappreviews.md
+      - "Store publishing": features/publishing.md

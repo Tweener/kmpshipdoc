@@ -35,6 +35,10 @@ Replace `[YOUR_APP_NAME]` with the desired name for your project folder.
 
 ### Configure Git remotes <small>(Pro Plan)</small>
 
+!!! info "Pro plan required"
+
+    This step is only required for Pro Plan users. If you're using the Free Plan, you can skip this section.
+
 To set up your project with Git, you need to configure the remote repositories. This allows you to push your changes to your own repository and keep track of updates from the original KMPShip repository.
 
 - First, rename the default Git remote to `upstream`:
@@ -65,6 +69,10 @@ git push -u origin main
 
 ### Keep your project up to date <small>(Pro Plan)</small>
 
+!!! info "Pro plan required"
+
+    This step is only required for Pro Plan users. If you're using the Free Plan, you can skip this section.
+
 To ensure your project stays up to date with the latest changes from the original KMPShip repository, you can regularly pull updates from the `upstream` remote:
 
 ```bash
@@ -72,7 +80,7 @@ git fetch upstream
 git merge upstream/main
 ```
 
-!!! note
+!!! tip
 
     Make sure to **regularly keep** the `main` branch in sync with the original KMPShip repository. This way, you can easily pull updates and new features as they are released.
 
