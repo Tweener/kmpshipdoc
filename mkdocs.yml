@@ -83,5 +83,5 @@ nav:
       - "Notifications": features/notifications.md
       - "Payments": features/payments.md
       - "Store publishing": features/publishing.md
-  - "Components": components.md
+  - "UI components": ui-components.md
   - "Production": production.md

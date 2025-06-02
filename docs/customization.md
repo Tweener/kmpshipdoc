@@ -27,3 +27,5 @@ Remove `-PdryRun` when you're ready to apply the changes and run the task again,
 Go back to **Android Studio** and click on **"Sync Project with Gradle Files"** (the elephant icon) to ensure all changes are fully applied.
 
 ## Customize your theme
+
+Check out [Czan - Theme cuztomization](https://www.czan.dev/setup/#theme-customization) documentation to learn how to customize your theme, including colors, typography, shapes, dark mode, and more.
