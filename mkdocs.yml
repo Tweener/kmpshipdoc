@@ -41,7 +41,6 @@ theme:
         name: Switch to light mode
   features:
     - content.code.copy
-    - navigation.expand
     - navigation.tracking
     - navigation.indexes
 
@@ -52,7 +51,11 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.emoji:
@@ -66,7 +69,12 @@ markdown_extensions:
 nav:
   - "Get started": index.md
   - "Customization": customization.md
-  - "App architecture": architecture.md
+  - "Foundations":
+      - foundations/index.md
+      - "Architecture": foundations/clean-architecture.md
+      - "Dependency injection": foundations/dependency-injection.md
+      - "Image fetching": foundations/image-fetching.md
+      - "Networking": foundations/networking.md
   - "Features":
       - features/index.md
       - "Authentication": features/authentication.md
