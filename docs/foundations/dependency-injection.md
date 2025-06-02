@@ -16,9 +16,9 @@ shared/src/commonMain/kotlin/{your/package/name}/_internal/di/SharedModule.kt
 
 This directory contains all the modules and bindings used across your shared code — such as repositories, use cases, and utilities.
 
-!!! note
+!!! tip
 
-    If you create new shared classes (e.g. a new use case or service) that need to be injected, make sure to add their bindings here.
+    When you add new shared dependencies (e.g., repositories, use cases, or services), make sure to register them in this file.
 
 ### Android-specific DI
 
@@ -30,7 +30,7 @@ shared/src/androidMain/kotlin/{your/package/name}/_internal/di/SharedAndroidDI.k
 
 This file imports the shared configuration and extends it with Android-specific declarations.
 
-!!! note
+!!! tip
 
     If you create new Android-only classes (e.g. `Context`-based services), register them in this file.
 
@@ -44,6 +44,6 @@ shared/src/iosMain/kotlin/{your/package/name}/_internal/di/SharedIosDI.kt
 
 It also includes the shared setup and adds iOS-specific dependencies where needed.
 
-!!! note
+!!! tip
 
     If you create new iOS-only classes (e.g. platform-specific bridges), be sure to bind them here.
