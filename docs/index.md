@@ -22,7 +22,7 @@ If anything is missing (like Xcode or Android Studio), KDoctor will let you know
 
 ## Get the Code
 
-Follow these steps to get KMPShip set up locally:
+Follow these steps to get KMPShip set up locally.
 
 ### Clone the repository
 
