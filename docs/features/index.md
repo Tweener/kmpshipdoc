@@ -26,7 +26,7 @@ Explore what KMPShip includes. Some features may require configuration before us
 
     ---
 
-    Integrate in-app [`purchases`](#) and subscriptions with RevenueCat, and display a built-in paywall to convert users to paying customers.
+    Integrate in-app purchases and subscriptions with RevenueCat, and display a built-in paywall to convert users to paying customers.
 
     [:octicons-arrow-right-24: Setup payments](/features/payments)
 
@@ -46,7 +46,7 @@ Explore what KMPShip includes. Some features may require configuration before us
 
     Prompt users to leave a review directly from within the app using platform-native dialogs.
 
-    [:octicons-arrow-right-24: Setup in-app reviews](/features/inappreviews)
+    [:octicons-arrow-right-24: Setup in-app reviews](/features/in-app-reviews)
 
 -   :octicons-rocket-24:{ .lg .middle } __Store publishing__
 

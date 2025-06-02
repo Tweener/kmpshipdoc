@@ -70,8 +70,10 @@ nav:
   - "Features":
       - features/index.md
       - "Authentication": features/authentication.md
+      - "In-App Reviews": features/in-app-reviews.md
       - "Navigation": features/navigation.md
-      - "Payments": features/payments.md
       - "Notifications": features/notifications.md
-      - "In-App Reviews": features/inappreviews.md
+      - "Payments": features/payments.md
       - "Store publishing": features/publishing.md
+  - "Components": components.md
+  - "Production": production.md
