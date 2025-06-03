@@ -21,4 +21,6 @@ To publish your Android app on the Google Play Store, you need to create a Googl
 Refer to the official documentation for full details:  
 👉 [Create a Google Play Developer Account (Official Guide)](https://support.google.com/googleplay/android-developer/answer/6112435)
 
+---
+
 Once your account is set up, you’ll be able to create and manage apps, track releases, and publish updates directly through the Google Play Console.
