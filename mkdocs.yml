@@ -86,7 +86,7 @@ nav:
   - "UI components": ui-components.md
   - "Tutorials":
       - tutorials/index.md
-      - "Create Firebase project": tutorials/firebase.md
+      - "Create Firebase project": tutorials/create-firebase-project.md
       - "Create stores accounts":
           - tutorials/stores/index.md
           - "App Store (iOS)": tutorials/stores/app-store-connect-account.md
