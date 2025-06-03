@@ -23,4 +23,6 @@ Refer to the official documentation for full details:
 
 ---
 
-Once your account is set up, you’ll be able to create and manage apps, track releases, and publish updates directly through the Google Play Console.
+!!! success "Google Play Developer Account Created Successfully"
+
+    You have successfully created a Google Play Developer account. You can now access the [Google Play Console](https://play.google.com/console/) to manage your apps, track performance, and publish updates.

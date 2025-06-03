@@ -23,4 +23,6 @@ Refer to Apple’s official documentation for full details:
 
 ---
 
-After your account is approved, you’ll have access to [App Store Connect](https://appstoreconnect.apple.com/) where you can manage apps, create builds, set pricing, and publish to the App Store.
+!!! success "Apple Developer Account Created Successfully"
+
+    You have successfully created an Apple Developer account. You can now access [App Store Connect](https://appstoreconnect.apple.com/) to manage your iOS apps, create builds, set pricing, and publish to the App Store.

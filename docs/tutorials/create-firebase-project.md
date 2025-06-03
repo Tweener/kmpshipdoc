@@ -37,4 +37,6 @@ You can refer to the official guide for detailed steps:
 
 ---
 
-Once both platforms are linked, you can start using Firebase services in your shared code.
+!!! success "Firebase project created successfully"
+
+    You have successfully created a Firebase project and linked both your Android and iOS apps. You can start using Firebase services in your shared code.
