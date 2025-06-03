@@ -84,4 +84,11 @@ nav:
       - "Payments": features/payments.md
       - "Store publishing": features/publishing.md
   - "UI components": ui-components.md
+  - "Tutorials":
+      - tutorials/index.md
+      - "Create Firebase project": tutorials/firebase.md
+      - "Create stores accounts":
+          - tutorials/stores/index.md
+          - "App Store (iOS)": tutorials/stores/app-store-connect-account.md
+          - "Google Play (Android)": tutorials/stores/google-play-developer-account.md
   - "Production": production.md
