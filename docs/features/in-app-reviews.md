@@ -27,3 +27,8 @@ For details on how to use it in your app, please refer to the [`InAppReviewLaunc
 - [Android – In-App Review API (Google Play)](https://developer.android.com/guide/playcore/in-app-review)
 - [iOS – Requesting App Store reviews](https://developer.apple.com/documentation/storekit/skstorereviewcontroller/requesting_app_store_reviews)
 
+---
+
+!!! success "In-App Reviews setup complete"
+
+    You have successfully integrated in-app reviews into your app. Users can now easily provide feedback without leaving your app, enhancing engagement and visibility.

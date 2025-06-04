@@ -102,3 +102,9 @@ Once enabled, KMPShip provides:
 - Support for **password reset**: users can receive a password recovery email and reset their password directly in the app.
 - Support for **email verification**: users can verify their email address after signing up.
 - Firebase error handling for common issues (e.g., invalid credentials, user not found).
+
+---
+
+!!! success "Authentication setup complete"
+
+    You have successfully configured authentication in your KMPShip app. Users can now sign in using Google, Apple, or email/password methods.
