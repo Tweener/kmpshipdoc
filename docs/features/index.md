@@ -50,6 +50,15 @@ Explore what KMPShip includes. Some features may require configuration before us
 
     [:octicons-arrow-right-24: Setup in-app reviews](/features/in-app-reviews)
 
+
+-   :material-cog-sync:{ .lg .middle } __Remote config__
+
+    ---
+
+    Remote Config lets you update app behavior without releasing a new version, using feature flags and app configuration parameters.
+
+    [:octicons-arrow-right-24: Setup remote config](/features/remote-config)
+
 -   :octicons-rocket-24:{ .lg .middle } __Store publishing__
 
     ---

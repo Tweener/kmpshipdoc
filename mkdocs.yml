@@ -83,6 +83,7 @@ nav:
       - "Navigation": features/navigation.md
       - "Notifications": features/notifications.md
       - "Payments": features/payments.md
+      - "Remote config": features/remote-config.md
       - "Store publishing": features/publishing.md
   - "UI components": ui-components.md
   - "Production": production.md
