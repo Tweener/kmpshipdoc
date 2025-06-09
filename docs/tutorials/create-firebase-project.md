@@ -8,7 +8,7 @@ To enable features like authentication, analytics, or remote config in your app,
    Visit [https://console.firebase.google.com](https://console.firebase.google.com) and sign in with your Google account.
 
 2. **Create a new project**  
-   Click “Add project” and follow the steps. You can skip Google Analytics setup if you don’t need it.
+   Click “Add project” and follow the steps. **Make sure to enable Google Analytics.**
 
 ## Add your Android app
 

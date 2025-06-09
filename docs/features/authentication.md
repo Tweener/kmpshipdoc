@@ -18,9 +18,9 @@ If you haven't done this yet, follow the linked guide and connect both your Andr
 
 KMPShip supports the following authentication providers out of the box:
 
-- Google Sign In
-- Apple Sign In
-- Email & Password
+- [Google Sign In](#google-sign-in)
+- [Apple Sign In](#apple-sign-in-ios-only)
+- [Email & Password](#email-password)
 
 None of these providers are mandatory — you can enable only the ones you need.
 

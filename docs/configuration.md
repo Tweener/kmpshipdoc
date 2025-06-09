@@ -17,7 +17,7 @@ If you haven’t done this yet, follow these quick guides:
 - [Google Play Developer Account](tutorials/stores/google-play-developer-account.md)
 - [Apple Developer Account (App Store Connect)](tutorials/stores/app-store-connect-account.md)
 
-## Set up a Firebase Project
+## Create a Firebase Project
 
 KMPShip relies on Firebase for services like authentication, remote config, and analytics. You’ll need to create a Firebase project and connect both your Android and iOS apps.
 

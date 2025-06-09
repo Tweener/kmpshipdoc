@@ -3,7 +3,7 @@
 KMPShip uses [RevenueCat](https://www.revenuecat.com/) to manage in-app purchases and subscriptions across platforms. Before using the payments feature, a few steps are required to configure your
 store accounts and RevenueCat dashboard.
 
-## 1. Create In-App Purchases & Subscriptions
+## 1. Create in-app purchases & subscriptions
 
 You must create your in-app purchases and subscriptions in both stores:
 
@@ -56,7 +56,7 @@ In Xcode:
 
     You have successfully configured payments for both Android and iOS using RevenueCat. Your app is now ready to offer and manage in-app purchases and subscriptions.
 
-## 5. Use RevenueCat in Your Code
+## 5. Use RevenueCat in your code
 
 To abstract RevenueCat and isolate business logic, KMPShip provides a set of use cases located at:
 
