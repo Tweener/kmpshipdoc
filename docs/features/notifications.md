@@ -71,7 +71,32 @@ alarmeeService.local.schedule(
 )
 ```
 
-You can also cancel or send notifications immediately using the `local.cancel(...)` and `local.immediate(...)` functions.
+### Cancel a scheduled notification
+
+To cancel a scheduled local notification, you can use the `cancel` function, passing the Alarmee's `uuid`:
+
+```kotlin
+alarmeeService.local.cancel(uuid = "myAlarmId")
+```
+
+### Send an immediate notification
+
+You can also send a notification immediately without scheduling it. This is useful for urgent messages or alerts:
+
+```kotlin
+alarmeeService.local.immediate(
+   alarmee = Alarmee(
+      uuid = "myAlarmId",
+      notificationTitle = "🚀 Congratulations! You've pushed an Alarmee right now!",
+      notificationBody = "This notification will be displayed right away",
+      androidNotificationConfiguration = AndroidNotificationConfiguration( // Required configuration for Android target only (this parameter is ignored on iOS)
+         priority = AndroidNotificationPriority.DEFAULT,
+         channelId = "immediateChannelId",
+      ),
+      iosNotificationConfiguration = IosNotificationConfiguration(),
+   )
+)
+```
 
 For more advanced usage and configuration options, please refer to the [Alarmee GitHub repository](https://github.com/Tweener/alarmee).
 
