@@ -20,7 +20,25 @@ If you haven't done this yet, follow the linked guide to create your developer a
 
 To enable automated publishing, you need to securely connect GitHub Actions with your Google Play Console using a Service Account. Here's how:
 
-#### 1. Create a Service Account in Google Cloud
+#### 1. Generate a keystore
+
+Before continuing, make sure your Android app is signed with a release keystore:
+
+1. Open **Android Studio**.
+2. Navigate to **Build > Generate Signed Bundle / APK**.
+3. Choose either **APK** or **Android App Bundle**, then click **Next**.
+4. Click **Create new\...** to generate a new keystore.
+5. For the "Key store path", choose `androidApp/config/keystore/my_app.keystore`.
+6. Fill in the required keystore and key credentials.
+7. Click **OK** to create the keystore.
+
+Your keystore is now generated and saved securely. It wil be used for signing your app.
+
+!!! warning "Never commit your keystore to version control"
+
+    The keystore is already added to the `.gitignore` file by default, but it's crucial to ensure that it remains secure and is not accidentally committed to your repository.
+
+#### 2. Create a Service Account in Google Cloud
 
 * Go to the [Google Cloud Console](https://console.cloud.google.com/).
 * Select your existing project linked to the Play Console or create a new one.
@@ -31,13 +49,13 @@ To enable automated publishing, you need to securely connect GitHub Actions with
 * Skip granting user access and click **Done**.
 * Locate your new service account and copy its **email address** — you'll need it in the next step.
 
-#### 2. Generate the JSON Key
+#### 3. Generate the JSON Key
 
 * In the same list, click the **Actions (⋮)** menu for your service account just created and select **Manage keys**.
 * Click **Add key > Create new key**.
 * Select **JSON** and click **Create** — this will download a JSON file to your computer. Keep it secure.
 
-#### 3. Grant Access in Google Play Console
+#### 4. Grant Access in Google Play Console
 
 * Open your [Google Play Console](https://play.google.com/console).
 * Go to **Users and permissions > Invite new users**.
@@ -88,6 +106,8 @@ If you want to publish automatically via GitHub Actions:
 * **Value**: (Paste the base64 string you copied)
 
 This will be used by your CI/CD pipeline to deploy the app update automatically.
+
+## iOS (App Store Connect)
 
 ---
 
