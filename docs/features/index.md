@@ -59,6 +59,14 @@ Explore what KMPShip includes. Some features may require configuration before us
 
     [:octicons-arrow-right-24: Setup remote config](/features/remote-config)
 
+-   :octicons-database-24:{ .lg .middle } __Local database__
+
+    ---
+
+    Store structured data locally on the device using Room, with support for both Android and iOS.
+
+    [:octicons-arrow-right-24: Setup local database](/features/local-database)
+
 -   :octicons-rocket-24:{ .lg .middle } __Store publishing__
 
     ---

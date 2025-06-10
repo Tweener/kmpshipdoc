@@ -80,6 +80,7 @@ nav:
       - features/index.md
       - "Authentication": features/authentication.md
       - "In-App Reviews": features/in-app-reviews.md
+      - "Local database": features/local-database.md
       - "Navigation": features/navigation.md
       - "Notifications": features/notifications.md
       - "Payments": features/payments.md
@@ -95,5 +96,5 @@ nav:
           - "App Store (iOS)": tutorials/stores/app-store-connect-account.md
           - "Google Play (Android)": tutorials/stores/google-play-developer-account.md
   - "Extras":
-        - extras/index.md
-        - "Launchers": extras/launchers.md
+      - extras/index.md
+      - "Launchers": extras/launchers.md

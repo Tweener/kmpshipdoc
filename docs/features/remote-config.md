@@ -46,7 +46,7 @@ Boolean Remote Config values are considered **Feature Flags** in KMPShip.
 2. Add a mapping in the `RemoteConfigFeatureFlagModelMapper` class
    Location: `com.example.myapp.data.source.firebase.remoteconfig.mapper`
 3. Use `GetFeatureFlagUseCase` from your ViewModel
-   Location: `com.tweener.kmpship.domain.usecase.settings`
+   Location: `com.example.myapp.domain.usecase.settings`
 
 ### Example:
 
