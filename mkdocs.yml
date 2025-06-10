@@ -90,11 +90,11 @@ nav:
   - "Production": production.md
   - "Tutorials":
       - tutorials/index.md
-      - "Create Firebase project": tutorials/create-firebase-project.md
       - "Create stores accounts":
           - tutorials/stores/index.md
           - "App Store (iOS)": tutorials/stores/app-store-connect-account.md
           - "Google Play (Android)": tutorials/stores/google-play-developer-account.md
+      - "Create Firebase project": tutorials/create-firebase-project.md
   - "Extras":
       - extras/index.md
       - "Launchers": extras/launchers.md
