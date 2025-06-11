@@ -2,10 +2,6 @@
 
 KMPShip comes preconfigured for automated deployment to the Google Play Console using GitHub Actions. However, it still requires a few one-time manual configuration steps to securely connect the app to the Play Console and prepare it for publishing.
 
-Automated deployment to the Google Play Store is essential for delivering updates and new features to your Android users efficiently.
-
-This guide will help you set up the necessary configurations, including keystore generation, Google Cloud Service Account creation, and GitHub Actions integration for automated publishing.
-
 ---
 
 ## Step 1: Keystore setup
@@ -16,7 +12,7 @@ To sign your Android app and publish it to the Play Store, you need a secure key
 
 1. Open **Android Studio**.
 2. Navigate to **Build > Generate Signed Bundle / APK**.
-3. Choose either **APK** or **Android App Bundle**, then click **Next**.
+3. Choose either **Android App Bundle**, then click **Next**.
 4. Click **Create new\...** to generate a new keystore.
 5. For the "Key store path", choose:
    ```

@@ -90,6 +90,15 @@ git merge upstream/main
 
 ---
 
+## Create a Firebase Project
+
+KMPShip relies on Firebase for services like authentication, remote config, and analytics. You’ll need to create a Firebase project and connect both your Android and iOS apps.
+
+Follow this step-by-step guide:  
+👉 [Create a Firebase Project](tutorials/create-firebase-project.md)
+
+---
+
 ## Run the project
 
 Open the project in **Android Studio** and run the app using the provided run configurations:
@@ -101,4 +110,7 @@ Then, to make sure it also works on Xcode, open the Xcode workspace located at `
 
 ---
 
-Congratulations! 👏 The initial setup is done and you already have your app up and running on Android and iOS.
+!!! success "Next Steps"
+
+    Congratulations! 👏 The initial setup is done and you already have your app up and running on Android and iOS.
+    Now, you can proceed with your app [customization](/customization/).

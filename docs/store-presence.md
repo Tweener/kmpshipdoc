@@ -1,8 +1,8 @@
-# Configuration
+# Store presence
 
-Before you dive into using KMPShip’s features, there are a few essential configuration steps to complete. These ensure that everything is set up correctly so you can enable services like authentication, analytics, and notifications later on.
+Before using KMPShip’s features, ensure you have accounts on both the Google Play Console and App Store Connect. If you don’t already have them, create your accounts and then set up your app on each store.
 
-This configuration is required and should be done **right after setup**, and **before attempting to use any feature module**.
+This is a crucial step that must be completed **before attempting to use any feature module**.
 
 ---
 
@@ -32,16 +32,9 @@ Follow these guides to create your app on each platform:
 
 ---
 
-## Create a Firebase Project
-
-KMPShip relies on Firebase for services like authentication, remote config, and analytics. You’ll need to create a Firebase project and connect both your Android and iOS apps.
-
-Follow this step-by-step guide:  
-👉 [Create a Firebase Project](tutorials/create-firebase-project.md)
-
----
-
 !!! success "Next Steps"
 
-    Now that you have completed the initial configuration, you can proceed to set up specific features like authentication, notifications, and analytics.  
+    You have successfully created your developer accounts and set up your apps on the stores, you can proceed to set up specific features like authentication, notifications, and analytics.
+
+    Check out the [Foundations](foundations/index.md) section for more details about how the app is built.<br/>
     Check out the [Features](features/index.md) section for more details on each feature and how to implement them in your app.

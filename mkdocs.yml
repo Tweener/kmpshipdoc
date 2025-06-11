@@ -69,7 +69,7 @@ markdown_extensions:
 nav:
   - "Get started": index.md
   - "Customization": customization.md
-  - "Configuration": configuration.md
+  - "Store presence": store-presence.md
   - "Foundations":
       - foundations/index.md
       - "Architecture": foundations/clean-architecture.md
