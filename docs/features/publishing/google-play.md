@@ -35,8 +35,7 @@ To safely upload the keystore to GitHub Actions:
    ```
 2. Go to your **GitHub repository > Settings > Secrets and variables > Actions**.
 3. Create a new **repository secret**:
-    * **Name**: `ANDROID_KEYSTORE_RELEASE_B64`
-    * **Value**: Paste the base64-encoded string
+    * `ANDROID_KEYSTORE_RELEASE_B64`: Paste the base64-encoded string
 
 ### 3. Add additional signing secrets
 
@@ -99,19 +98,15 @@ androidApp/google-play-uploader.json
 
 ---
 
-## Step 4: Publish from your machine (Optional)
+## Step 4: Configure CI/CD
 
-To publish a release update manually from your local machine:
+### Configure Java SDK version
 
-```bash
-./gradlew :androidApp:publishReleaseBundle
-```
+1. Go to your GitHub repository settings → **Secrets and variables** → **Actions** → **Variables** tab.
+2. Create a new **repository variable**:
+    * `JAVA_JDK_VERSION`: `21` (or the version you are using)
 
----
-
-## Step 5: Configure CI/CD
-
-If you want to publish automatically via GitHub Actions:
+### Configure GitHub Actions secrets
 
 1. Encode the `.json` key as base64:
 
@@ -119,12 +114,21 @@ If you want to publish automatically via GitHub Actions:
     base64 -i androidApp/google-play-uploader.json | pbcopy
     ```
 
-2. Go to your GitHub repository settings → **Secrets and variables** → **Actions**.
+2. Go to your GitHub repository settings → **Secrets and variables** → **Actions** → **Secrets** tab.
 3. Create a new **repository secret**:
-    * **Name**: `GOOGLE_PLAY_UPLOADER_JSON_KEY_B64`
-    * **Value**: (Paste the base64 string you copied)
+    * `GOOGLE_PLAY_UPLOADER_JSON_KEY_B64`: Paste the base64 string you copied
 
 This will be used by your CI/CD pipeline to deploy the app update automatically.
+
+---
+
+## Publish from your machine <small>(Optional)</small>
+
+To publish a release update manually from your local machine:
+
+```bash
+./gradlew :androidApp:publishReleaseBundle
+```
 
 ---
 
