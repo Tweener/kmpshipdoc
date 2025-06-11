@@ -90,7 +90,7 @@ nav:
           - "App Store (iOS)": features/publishing/app-store.md
           - "Google Play (Android)": features/publishing/google-play.md
   - "UI components": ui-components.md
-  - "Production": production.md
+  - "Releases": releases.md
   - "Tutorials":
       - tutorials/index.md
       - "Create stores accounts":
