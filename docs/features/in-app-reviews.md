@@ -6,6 +6,8 @@ In-app reviews let users rate and review your app without leaving it, improving 
 
     The system decides whether or not to display the review dialog. You can request it, but you can't force it to appear.
 
+---
+
 ## Example UI
 
 Here’s what the in-app review prompt looks like:
@@ -18,9 +20,13 @@ Here’s what the in-app review prompt looks like:
 
 ![iOS In-App Review](/assets/images/apple-iar.png)
 
+---
+
 ## Implementation
 
 For details on how to use it in your app, please refer to the [`InAppReviewLauncher`](/extras/launchers/#inappreviewlauncher) section in the Extras page.
+
+---
 
 ## Official platform documentation
 

@@ -4,6 +4,8 @@ KMPShip comes with a set of prebuilt launchers designed to abstract away platfor
 
 **Location:** `com.example.myapp.presentation._internal.launcher`.
 
+---
+
 ## MobileStoreSubscriptionLauncher
 
 Opens the user’s app store page where they can manage their subscriptions. It handles both platforms automatically:
@@ -28,6 +30,8 @@ fun ManageSubscriptionPlanScreen() {
 }
 ```
 
+---
+
 ## EmailClientLauncher
 
 Opens the default email client on the user's device. This is useful when prompting the user to check their inbox for a magic link after signing into the app.
@@ -45,6 +49,8 @@ fun NeedEmailVerificationScreen() {
     emailClientLauncher.openEmailClient()
 }
 ```
+
+---
 
 ## EmailComposerLauncher
 
@@ -66,6 +72,8 @@ fun SendEmailScreen() {
     }
 }
 ```
+
+---
 
 ## InAppReviewLauncher
 

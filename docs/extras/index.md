@@ -14,12 +14,4 @@ This section covers additional tools provided by KMPShip to enhance your app’s
 
     [:octicons-arrow-right-24: Explore launchers](/extras/launchers)
 
--   __Screen navigation__
-
-    ---
-
-    Manage screen transitions, create new screens, and structure your app flow across Android and iOS.
-
-    [:octicons-arrow-right-24: Setup navigation](/extras/navigation)
-
 </div>

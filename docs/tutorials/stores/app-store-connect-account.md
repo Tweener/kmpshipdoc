@@ -2,6 +2,8 @@
 
 To distribute your iOS app on the App Store, you'll need to enroll in the Apple Developer Program and access App Store Connect.
 
+---
+
 ## Steps to get started
 
 1. **Sign in with your Apple ID**  
@@ -15,6 +17,8 @@ To distribute your iOS app on the App Store, you'll need to enroll in the Apple 
 
 4. **Wait for approval**  
    Once you've submitted your information and payment, Apple will review and activate your account. This usually takes a day or two.
+
+---
 
 ## Need help?
 

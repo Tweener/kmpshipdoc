@@ -85,7 +85,10 @@ nav:
       - "Notifications": features/notifications.md
       - "Payments": features/payments.md
       - "Remote config": features/remote-config.md
-      - "Store publishing": features/publishing.md
+      - "Store publishing":
+          - features/publishing/index.md
+          - "App Store (iOS)": features/publishing/app-store.md
+          - "Google Play (Android)": features/publishing/google-play.md
   - "UI components": ui-components.md
   - "Production": production.md
   - "Tutorials":

@@ -1,5 +1,7 @@
 # Networking
 
+---
+
 ## Configuration
 
 All networking is configured using [**Ktor**](https://ktor.io/), a multiplatform networking client.
@@ -9,6 +11,8 @@ All networking is configured using [**Ktor**](https://ktor.io/), a multiplatform
 * Easily integrates with the dependency injection setup
 
 You can check the `KtorHttpClientFactory` class in the `Data` layer.
+
+---
 
 ## API Requests
 

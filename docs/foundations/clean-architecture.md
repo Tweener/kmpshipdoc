@@ -44,6 +44,8 @@ end
     C3 --> C4
 ```
 
+---
+
 ## `Domain` module
 
 The `domain` module is located at:
@@ -77,6 +79,8 @@ flowchart TD
     Domain --> RepositoryInterface
     Domain --> Error
 ```
+
+---
 
 ## `Data` module
 
@@ -119,6 +123,8 @@ flowchart TD
     RepositoryImpl --> DomainRepo[repository implementations]
 
 ```
+
+---
 
 ## `Presentation` module
 

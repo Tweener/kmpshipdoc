@@ -9,6 +9,8 @@ With Remote Config, you can:
 * Roll out features gradually
 * Experiment with A/B testing
 
+---
+
 ## Using Remote Config in KMPShip
 
 KMPShip provides a structured and type-safe way to work with Remote Config values by categorizing them into **Feature Flags** and **App Configuration Parameters**.
@@ -34,6 +36,8 @@ enum class RemoteConfigKey(val value: String) {
     EXAMPLE_STRING_KEY("my_string_key"),
 }
 ```
+
+---
 
 ## Feature Flags <small>(Boolean values)</small>
 
@@ -96,6 +100,8 @@ Boolean Remote Config values are considered **Feature Flags** in KMPShip.
         )
     )
     ```
+
+---
 
 ## App Configuration Parameters <small>(Strings, Numbers, Arrays...)</small>
 

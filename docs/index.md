@@ -4,6 +4,8 @@
 
 This guide will help you set up your environment and get KMPShip running on your machine in just a few steps.
 
+---
+
 ## Requirements
 
 Before running KMPShip, make sure your local environment is ready for Kotlin Multiplatform development. The easiest way to check your setup is to use [**KDoctor**](https://github.com/Kotlin/kdoctor).
@@ -20,7 +22,9 @@ You should get a <span class="text-green">[✓]</span> on all diagnostics and th
 
 If anything is missing (like Xcode or Android Studio), KDoctor will let you know what to install.
 
-## Get the Code
+---
+
+## Get the code
 
 Follow these steps to get KMPShip set up locally.
 
@@ -83,6 +87,8 @@ git merge upstream/main
 !!! tip
 
     Make sure to **regularly keep** the `main` branch in sync with the original KMPShip repository. This way, you can easily pull updates and new features as they are released.
+
+---
 
 ## Run the project
 

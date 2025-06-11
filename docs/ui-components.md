@@ -4,11 +4,15 @@ KMPShip comes with a set of reusable UI components powered by the [Czan Design S
 
 These components help you build consistent, modern interfaces with minimal effort, for both Android and iOS using [Compose Multiplatform](https://www.jetbrains.com/compose-multiplatform/).
 
+---
+
 ## Explore components
 
 You can explore the full component library, usage examples, and API reference directly on the Czan website:
 
 👉 [https://czan.dev/](https://czan.dev/)
+
+---
 
 ## How to Use
 

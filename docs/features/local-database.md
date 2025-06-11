@@ -10,6 +10,8 @@ The Room-based implementation lives in the `data` layer at:
 com.example.myapp.data.source.room
 ```
 
+---
+
 ## Structure overview
 
 The local database setup is organized into the following main components:
@@ -36,6 +38,8 @@ Mappers convert between domain entities (from the `domain` layer) and database m
 
 This layered design keeps the business logic clean and decoupled from the persistence logic.
 
+---
+
 ## MyProjectRoomDatabase
 
 `MyProjectRoomDatabase` is the main Room database class. It acts as the entry point to your local database configuration. You can rename this class to match your own project naming convention if needed.
@@ -58,6 +62,8 @@ abstract class MyProjectRoomDatabase : RoomDatabase() {
     abstract fun roomOtherClassDao(): RoomOtherClassDao
 }
 ```
+
+---
 
 ## Example Models Provided
 

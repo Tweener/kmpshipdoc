@@ -2,6 +2,8 @@
 
 KMPShip includes built-in support for Firebase Authentication using [:simple-github: Passage](https://github.com/Tweener/passage/), allowing you to easily implement user authentication in your app.
 
+---
+
 ## Prerequisite: Create a Firebase Project
 
 !!! note
@@ -14,6 +16,8 @@ If you haven't done this yet, follow the linked guide and connect both your Andr
 
 👉 [Create a Firebase Project](../tutorials/create-firebase-project.md)
 
+---
+
 ## Supported providers
 
 KMPShip supports the following authentication providers out of the box:
@@ -23,6 +27,8 @@ KMPShip supports the following authentication providers out of the box:
 - [Email & Password](#email-password)
 
 None of these providers are mandatory — you can enable only the ones you need.
+
+---
 
 ## Google Sign In
 
@@ -69,6 +75,8 @@ Replace:
 - `YOUR_GOOGLE_SIGN_IN_WEB_CLIENT_ID` with the `CLIENT_ID` value
 - `YOUR_REVERSED_GOOGLE_SIGN_IN_WEB_CLIENT_ID` with the `REVERSED_CLIENT_ID` value
 
+---
+
 ## Apple Sign-In <small>(iOS only)</small>
 
 To support Apple Sign-In in your app, you must:
@@ -90,6 +98,8 @@ To support Apple Sign-In in your app, you must:
           - In Xcode:
             - Make sure the **Sign In with Apple** capability is enabled in your app’s target under **Signing & Capabilities**
             - Confirm the app’s **bundle identifier** matches the one registered in the Apple Developer Portal
+
+---
 
 ## Email & Password
 

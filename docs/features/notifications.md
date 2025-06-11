@@ -3,6 +3,8 @@
 KMPShip supports both **local** and **push notifications** using [:simple-github: Alarmee](https://github.com/Tweener/alarmee).
 This powerful abstraction handles platform differences and gives developers full control over how and when to notify users.
 
+---
+
 ## Prerequisite: Create a Firebase Project
 
 !!! note
@@ -14,6 +16,8 @@ Before configuring notifications, you must have a Firebase project already set u
 If you haven't done this yet, follow the linked guide and connect both your Android and iOS apps before continuing:
 
 👉 [Create a Firebase Project](../tutorials/create-firebase-project.md)
+
+---
 
 ## Local notifications
 
@@ -99,6 +103,8 @@ alarmeeService.local.immediate(
 ```
 
 For more advanced usage and configuration options, please refer to the [Alarmee GitHub repository](https://github.com/Tweener/alarmee).
+
+---
 
 ## Push notifications
 

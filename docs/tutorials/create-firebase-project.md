@@ -2,6 +2,8 @@
 
 To enable features like authentication, analytics, or remote config in your app, you’ll need to create a Firebase project and link both your Android and iOS apps to it.
 
+---
+
 ## Steps to get started
 
 1. **Go to the Firebase Console**  
@@ -9,6 +11,8 @@ To enable features like authentication, analytics, or remote config in your app,
 
 2. **Create a new project**  
    Click “Add project” and follow the steps. **Make sure to enable Google Analytics.**
+
+---
 
 ## Add your Android app
 
@@ -20,6 +24,8 @@ To enable features like authentication, analytics, or remote config in your app,
    ```
    This will replace the placeholder file already in that location.
 
+---
+
 ## Add your iOS app
 
 1. Still in the Firebase Console, click “Add app” and choose the iOS icon.
@@ -29,6 +35,8 @@ To enable features like authentication, analytics, or remote config in your app,
    iosApp/GoogleService-Info.plist
    ```
    This will replace the placeholder file already included in the project.
+
+---
 
 ## Need help?
 

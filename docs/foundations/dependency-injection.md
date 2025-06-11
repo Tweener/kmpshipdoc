@@ -2,6 +2,8 @@
 
 The project uses [**Koin**](https://insert-koin.io/) for dependency injection (DI), allowing you to manage and inject dependencies in a clean way.
 
+---
+
 ## Structure
 
 The DI setup is split into three parts to handle platform-specific and shared configurations.
