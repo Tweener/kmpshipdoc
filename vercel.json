@@ -19,6 +19,11 @@
       "source": "/tutorials/:slug",
       "destination": "/tutorials/:slug/",
       "permanent": true
+    },
+    {
+      "source": "/extras/:slug",
+      "destination": "/extras/:slug/",
+      "permanent": true
     }
   ]
 }
