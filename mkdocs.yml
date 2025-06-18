@@ -1,6 +1,6 @@
 site_name: KMPShip
 site_description: "The Kotlin/Compose Multiplatform boilerplate to quickly ship Android and iOS apps."
-site_url: https://kmpship.app/
+site_url: https://docs.kmpship.app/
 docs_dir: "docs"
 
 repo_name: "kmp-ship"
