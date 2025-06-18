@@ -11,6 +11,11 @@
       "permanent": true
     },
     {
+      "source": "/features/publishing/:slug",
+      "destination": "/features/publishing/:slug/",
+      "permanent": true
+    },
+    {
       "source": "/foundations/:slug",
       "destination": "/foundations/:slug/",
       "permanent": true
@@ -18,6 +23,11 @@
     {
       "source": "/tutorials/:slug",
       "destination": "/tutorials/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/tutorials/stores/:slug",
+      "destination": "/tutorials/stores/:slug/",
       "permanent": true
     },
     {
