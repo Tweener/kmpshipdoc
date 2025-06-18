@@ -6,8 +6,18 @@
   },
   "redirects": [
     {
-      "source": "/:path((?!.*\\.html$).*)",
-      "destination": "/:path/",
+      "source": "/features/:slug",
+      "destination": "/features/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/foundations/:slug",
+      "destination": "/foundations/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/tutorials/:slug",
+      "destination": "/tutorials/:slug/",
       "permanent": true
     }
   ]
