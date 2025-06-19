@@ -4,13 +4,13 @@ site_url: https://docs.kmpship.app/
 docs_dir: "docs"
 
 repo_name: "kmp-ship"
-repo_url: https://github.com/TweenerLabs/kmp-ship
+repo_url: https://github.com/TweenerLabs
 
 extra:
   generator: false # Disables the "Made with Material for MkDocs" line
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/TweenerLabs/kmp-ship
+      link: https://github.com/TweenerLabs
     - icon: fontawesome/brands/x-twitter
       link: https://x.com/KMPShip
 

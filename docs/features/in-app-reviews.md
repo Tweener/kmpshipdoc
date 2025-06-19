@@ -31,7 +31,7 @@ For details on how to use it in your app, please refer to the [`InAppReviewLaunc
 ## Official platform documentation
 
 - [Android – In-App Review API (Google Play)](https://developer.android.com/guide/playcore/in-app-review)
-- [iOS – Requesting App Store reviews](https://developer.apple.com/documentation/storekit/skstorereviewcontroller/requesting_app_store_reviews)
+- [iOS – Requesting App Store reviews](https://developer.apple.com/documentation/storekit/requesting-app-store-reviews)
 
 ---
 
