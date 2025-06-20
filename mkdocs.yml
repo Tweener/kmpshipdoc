@@ -68,7 +68,7 @@ markdown_extensions:
 
 nav:
   - "Get started": index.md
-  - "Customization": customization.md
+  - "Customize your app": customization.md
   - "Store presence": store-presence.md
   - "Foundations":
       - foundations/index.md

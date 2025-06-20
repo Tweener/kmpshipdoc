@@ -1,4 +1,4 @@
-# Customization
+# Customize your app
 
 ## Give your app a name
 
@@ -28,10 +28,63 @@ Go back to **Android Studio** and click on **"Sync Project with Gradle Files"** 
 
 ---
 
-## Customize your theme
+## Theme
 
 Check out [Czan - Theme cuztomization](https://www.czan.dev/setup/#theme-customization) documentation to learn how to customize your theme, including colors, typography, shapes, dark mode, and more.
 
 --- 
 
-## Customize your app icon
+## App icon
+
+Updating the app icon to reflect your brand identity is one of the first things you'll want to do.
+
+### Android
+
+The easiest way to change the app icon on Android is by using **Image Asset Studio** in Android Studio.
+
+**Steps:**
+
+1. Open **Android Studio**.
+2. In the **Project view**, right-click the `androidApp` folder.
+3. Select **New > Image Asset**.
+4. In the **Asset Type** dropdown, choose either:
+    * **Image** (for a PNG file), or
+    * **Vector** (for an SVG file).
+5. Upload your app icon and configure the foreground and background layers.
+6. Optionally customize padding, scaling, and shape.
+7. Click **Next**, then **Finish**.
+   This will automatically generate icons in all required `mipmap-` folders.
+
+8. Your app icon is referenced in `AndroidManifest.xml`:
+   ```xml title="AndroidManifest.xml"
+   <application
+       ...   
+       android:icon="@mipmap/ic_launcher"
+       ...
+   >
+   ```
+
+![Android Studio Image Asset](/assets/images/android-studio-image-asset.png)
+
+---
+
+### iOS
+
+iOS uses an asset catalog (`Assets.xcassets`) to manage app icons.
+
+**Steps:**
+
+1. Prepare your icon assets in all required sizes. You can generate them using a tool like:
+
+    * [MakeAppIcon](https://makeappicon.com/)
+    * [appicon.co](https://appicon.co)
+
+2. Open the iOS project in Xcode (`iosApp/iosApp.xcodeproj`).
+
+3. In the **Project Navigator**, expand `iosApp > Assets.xcassets > AppIcon`.
+
+4. Drag and drop the generated icon images into the correct slots in the AppIcon set.
+
+5. Your app icon is referenced in your target’s **Build Settings** > **Asset Catalog Compiler - Options** > **Primary App Icon Set Name**.
+
+![Xcode App Icon](/assets/images/xcode-app-icon.png)
