@@ -88,3 +88,39 @@ iOS uses an asset catalog (`Assets.xcassets`) to manage app icons.
 5. Your app icon is referenced in your target’s **Build Settings** > **Asset Catalog Compiler - Options** > **Primary App Icon Set Name**.
 
 ![Xcode App Icon](/assets/images/xcode-app-icon.png)
+
+---
+
+## Welcome screen
+
+The `WelcomeScreen` is the first branded impression users will see. It includes a logo, a title, and a 2-line headline — all of which can be customized.
+
+### Logo
+
+To change the logo shown on the welcome screen:
+
+* Replace the XML file named `welcome_logo.xml`
+* File location: `shared/presentation/src/commonMain/composeResources/drawable`
+* Keep the same filename (`welcome_logo.xml`) so that no code changes are needed.
+
+### Title
+
+To change the main app title displayed:
+
+* Open the `strings.xml` file
+* Modify the value for the key:
+   ```xml
+   <string name="app_name">Your App Name</string>
+   ```
+
+### Headline (2-line)
+
+To change the headline text below the title:
+
+* Still in `strings.xml`, update the following keys:
+   ```xml
+   <string name="welcome_headline_one">Your first headline line</string>
+   <string name="welcome_headline_two">Your second headline line</string>
+   ```
+
+These updates will be reflected automatically the next time you run the app.
