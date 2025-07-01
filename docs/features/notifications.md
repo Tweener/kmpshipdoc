@@ -36,22 +36,26 @@ In that file, add your custom channels to the `notificationChannels` list:
 ```kotlin
 actual fun createAlarmeePlatformConfiguration(): AlarmeePlatformConfiguration =
     notificationIconResId = R.drawable.ic_notification,
-    notificationIconColor = androidx.compose.ui.graphics.Color.Red, // Defaults to Color.Transparent is not specified
-    notificationChannels = listOf(
-        AlarmeeNotificationChannel(
-            id = "dailyNewsChannelId",
-            name = "Daily news notifications",
-            importance = NotificationManager.IMPORTANCE_HIGH,
-            soundFilename = "notifications_sound",
-        ),
-        AlarmeeNotificationChannel(
-            id = "breakingNewsChannelId",
-            name = "Breaking news notifications",
-            importance = NotificationManager.IMPORTANCE_LOW,
-        ),
-        // List all the notification channels you need here
-    )
+notificationIconColor = androidx.compose.ui.graphics.Color.Red, // Defaults to Color.Transparent is not specified
+notificationChannels = listOf(
+    AlarmeeNotificationChannel(
+        id = "dailyNewsChannelId",
+        name = "Daily news notifications",
+        importance = NotificationManager.IMPORTANCE_HIGH,
+        soundFilename = "notifications_sound",
+    ),
+    AlarmeeNotificationChannel(
+        id = "breakingNewsChannelId",
+        name = "Breaking news notifications",
+        importance = NotificationManager.IMPORTANCE_LOW,
+    ),
+    // List all the notification channels you need here
+)
 ```
+
+### iOS configuration
+
+You don't need to do anything special to configure local notifications on iOS, as KMPShip already includes the necessary setup.
 
 ### Scheduling a local notification
 
@@ -89,16 +93,17 @@ You can also send a notification immediately without scheduling it. This is usef
 
 ```kotlin
 alarmeeService.local.immediate(
-   alarmee = Alarmee(
-      uuid = "myAlarmId",
-      notificationTitle = "🚀 Congratulations! You've pushed an Alarmee right now!",
-      notificationBody = "This notification will be displayed right away",
-      androidNotificationConfiguration = AndroidNotificationConfiguration( // Required configuration for Android target only (this parameter is ignored on iOS)
-         priority = AndroidNotificationPriority.DEFAULT,
-         channelId = "immediateChannelId",
-      ),
-      iosNotificationConfiguration = IosNotificationConfiguration(),
-   )
+    alarmee = Alarmee(
+        uuid = "myAlarmId",
+        notificationTitle = "🚀 Congratulations! You've pushed an Alarmee right now!",
+        notificationBody = "This notification will be displayed right away",
+        androidNotificationConfiguration = AndroidNotificationConfiguration(
+            // Required configuration for Android target only (this parameter is ignored on iOS)
+            priority = AndroidNotificationPriority.DEFAULT,
+            channelId = "immediateChannelId",
+        ),
+        iosNotificationConfiguration = IosNotificationConfiguration(),
+    )
 )
 ```
 
@@ -110,7 +115,12 @@ For more advanced usage and configuration options, please refer to the [Alarmee 
 
 Push notifications are powered by **Firebase Cloud Messaging (FCM)** and are pre-integrated in KMPShip.
 
-### iOS configuration
+#### Android configuration
+
+You don't need to do anything special to configure push notifications on Android, as KMPShip already includes the necessary setup. However, you must ensure that your Firebase project is correctly
+linked to your Android app.
+
+#### iOS configuration
 
 To support push notifications on iOS, you need to configure Apple Push Notification service (APNs) and link it to Firebase:
 
