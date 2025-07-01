@@ -98,6 +98,7 @@ nav:
           - "App Store (iOS)": tutorials/stores/app-store-connect-account.md
           - "Google Play (Android)": tutorials/stores/google-play-developer-account.md
       - "Create Firebase project": tutorials/create-firebase-project.md
+      - "Activate Firestore Database": tutorials/activate-firestore-database.md
   - "Extras":
       - extras/index.md
       - "Launchers": extras/launchers.md

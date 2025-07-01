@@ -4,7 +4,9 @@ KMPShip includes built-in support for Firebase Authentication using [:simple-git
 
 ---
 
-## Prerequisite: Create a Firebase Project
+## Prerequisite
+
+### Create a Firebase Project
 
 !!! note
 
@@ -15,6 +17,18 @@ Before configuring authentication, you must have a Firebase project already set 
 If you haven't done this yet, follow the linked guide and connect both your Android and iOS apps before continuing:
 
 👉 [Create a Firebase Project](../tutorials/create-firebase-project.md)
+
+### Activate Firestore Database
+
+!!! note
+
+    You can skip this step if you already activated Firestore Database.
+
+To use KMPShip's authentication features, you need to activate the Firestore Database in your Firebase project.
+
+If you haven't done this yet, follow this step-by-step guide:
+
+👉 [Activate Firestore Database](../tutorials/activate-firestore-database.md)
 
 ---
 
