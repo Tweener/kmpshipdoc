@@ -93,27 +93,62 @@ Replace:
 
 ## Apple Sign-In <small>(iOS only)</small>
 
-To support Apple Sign-In in your app, you must:
+To support **Sign in with Apple** in your iOS app using Firebase Authentication, follow these steps carefully:
+
+### Step 1: Create a Service ID in Apple Developer Portal
+
+1. Visit [Service IDs](https://developer.apple.com/account/resources/identifiers/list/serviceId) and click the **"+"** button.
+2. Ensure **Service IDs** is selected, then click **Continue**.
+3. Fill out the form:
+
+    * **Description**: `MyProject Apple Sign In` (replace `MyProject` with your actual project name)
+    * **Identifier**: `com.example.myapp.apple.signin` (replace `com.example.myapp` with your app's package name)
+4. Click **Continue**, then on the next screen:
+
+    * Enable **Sign In with Apple**
+    * Click **Configure**
+    * In **Primary App ID**, select your app’s registered App ID (the one tied to your bundle ID)
+    * Click **Save**
+    * Under **Domains and Subdomains**, add your website domain (e.g., `kmpship.app`)
+    * Under **Return URLs**, enter:
+
+      ```
+      https://YOUR_FIREBASE_PROJECT_ID.firebaseapp.com/__/auth/handler
+      ```
+
+      *(Replace `YOUR_FIREBASE_PROJECT_ID` with your actual Firebase project ID)*
+   
+    * Click **Next**, then **Done**
+    * Finally, click **Continue**, then **Save**
+
+### Step 2: Create a Private Key for Apple Sign-In
+
+1. Visit [Keys](https://developer.apple.com/account/resources/authkeys/list) and click the **"+"** button.
+2. Enter a name for your key (e.g., `MyProject Apple Auth Key`)
+3. Enable **Sign in with Apple** and click **Configure**.
+4. In the **Primary App ID** dropdown, select the same App ID you chose earlier.
+5. Click **Save**, then **Continue**.
+6. Click **Register**, then **Download** the `.p8` private key.
+7. **Save this file securely** — you won't be able to download it again.
+
+### Step 3: Enable and configure Apple provider in Firebase
 
 1. In the [Firebase Console](https://console.firebase.google.com/), go to **Authentication > Sign-in method**
 2. Enable **Apple** as a provider.
-3. Configure Apple Sign-In for iOS:
+3. Fill out the following fields using the values from previous steps:
 
-     1. Go to the [Apple Developer Portal](https://developer.apple.com/account/resources/identifiers/list) and:
-          - Create a **Services ID**
-          - Create a **Key** with **Sign in with Apple** enabled
-          - Link both to your app’s bundle identifier
+    * **Services ID**: the Service ID you created in Step 1
+    * **Apple Team ID**: your Apple Team ID (found at [Apple Developer > Account](https://developer.apple.com/account) → **Membership Details**)
+    * **Key ID**: the ID from your newly created key in Step 2
+    * **Private key**: paste the content of the downloaded `.p8` file
+4. Click **Save**
 
-     2. In Firebase:
-          - Add your **Services ID**
-          - Upload the **Key ID** and **Private Key**
-          - Set your **Team ID** (found in the [Apple Developer Account](https://developer.apple.com/account) settings)
+### Step 4: Enable Sign in with Apple in Xcode
 
-          - In Xcode:
-            - Make sure the **Sign In with Apple** capability is enabled in your app’s target under **Signing & Capabilities**
-            - Confirm the app’s **bundle identifier** matches the one registered in the Apple Developer Portal
-
----
+1. Open your project in Xcode.
+2. Select your app target > **Signing & Capabilities**.
+3. Click **“+ Capability”**, then add **Sign In with Apple**.
+4. Ensure the **bundle identifier** matches the one used in your Apple Developer configuration.
 
 ## Email & Password
 
