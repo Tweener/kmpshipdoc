@@ -1,5 +1,5 @@
 site_name: KMPShip
-site_description: "The Kotlin/Compose Multiplatform boilerplate to quickly ship Android and iOS apps."
+site_description: "KMPShip is a Kotlin/Compose Multiplatform boilerplate that helps you build and monetize Android and iOS apps faster from a single codebase."
 site_url: https://docs.kmpship.app/
 docs_dir: "docs"
 
