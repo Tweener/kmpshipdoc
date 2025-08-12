@@ -20,7 +20,7 @@ To enable features like authentication, analytics, or remote config in your app,
 2. Enter your app’s package name (e.g. `com.example.myapp`) — this must match your actual Android package.
 3. Download the `google-services.json` file and place it in:
    ```
-   androidApp/app/google-services.json
+   androidApp/google-services.json
    ```
    This will replace the placeholder file already in that location.
 
