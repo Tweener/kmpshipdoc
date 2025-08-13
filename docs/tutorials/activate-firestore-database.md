@@ -18,8 +18,8 @@ To enable database features in your app using Firebase, you need to activate **C
 2. Select your Firebase project.
 3. Navigate to **Build > Firestore Database** in the left-hand menu.
 4. Click **Create database**.
-5. Choose the **Production mode** (recommended for live apps).
-6. Select the Firestore region closest to your target users.
+5. Select the Firestore region closest to your target users.
+6. Choose the **Production mode** (recommended for live apps).
 7. Click **Enable** to complete the setup.
 
 ---

@@ -32,7 +32,7 @@ To enable features like authentication, analytics, or remote config in your app,
 2. Enter your iOS app’s **bundle ID** (e.g. `com.example.myapp`) — this must match exactly.
 3. Download the `GoogleService-Info.plist` file and place it in:
    ```
-   iosApp/GoogleService-Info.plist
+   iosApp/iosApp/Firebase/GoogleService-Info.plist
    ```
    This will replace the placeholder file already included in the project.
 
