@@ -101,29 +101,35 @@ Follow this step-by-step guide:
 
 ## Give your app a name
 
-To ensure your app has a unique identity in the app stores and on users' devices, you’ll want to give it a name and set a custom package/bundle ID.
+To ensure your app has a unique identity in the app stores and on users' devices, you'll want to give it a name and set a custom package/bundle ID.
 
-This is done by running the `renameProject` Gradle task, which will automatically handle the necessary changes across your project files.
+This is done by running the `configure.sh` script, which guides you through an interactive process to customize your project configuration, including project name, package name, and other settings.
 
 !!! warning "Important"
 
-    Make sure to commit your changes before running the rename task. This task will modify multiple files, and it's best to have a backup in case you need to revert.
+    Make sure to commit your changes before running the configuration script. This script will modify multiple files, and it's best to have a backup in case you need to revert.
 
-The task has the following parameters:
+### How to Run
 
-* `projectName` (**required**): The new name for your project (e.g. `MyApp`).
-* `packageName` (**required**): The new base package (e.g. `com.example.myapp`).
-* `dryRun` (**optional**): If present, performs a dry run to preview changes without applying them.
-
-<h4>Example Usage</h4>
+1. Make the script executable (first time only):
 
 ```bash
-./gradlew renameProject -PprojectName=MyApp -PpackageName=com.example.myapp -PdryRun
+chmod +x configure.sh
 ```
 
-Remove `-PdryRun` when you're ready to apply the changes and run the task again, you should see the message `Task completed successfully!` in the terminal.
+2. Run the script and follow the interactive prompts:
 
-Go back to **Android Studio** and click on **"Sync Project with Gradle Files"** (the elephant icon) to ensure all changes are fully applied.
+```bash
+./configure.sh
+```
+
+3. **Optional**: Preview changes first without applying them:
+
+```bash
+./configure.sh --dry-run
+```
+
+After the script completes, go back to **Android Studio** and click on **"Sync Project with Gradle Files"** (the elephant icon) to ensure all changes are fully applied.
 
 ---
 
