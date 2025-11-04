@@ -2,25 +2,7 @@
 
 <h4>Hey devs, welcome to KMPShip 👋</h4>
 
-This guide will help you set up your environment and get KMPShip running on your machine in just a few steps.
-
----
-
-## Requirements
-
-Before running KMPShip, make sure your local environment is ready for Kotlin Multiplatform development. The easiest way to check your setup is to use [**KDoctor**](https://github.com/Kotlin/kdoctor).
-
-### Run KDoctor
-
-Install KDoctor (if not already installed) and in your terminal, run:
-
-```bash
-kdoctor
-```
-
-You should get a <span class="text-green">[✓]</span> on all diagnostics and the following message if no issues are found: `Your operation system is ready for Kotlin Multiplatform Mobile Development!`
-
-If anything is missing (like Xcode or Android Studio), KDoctor will let you know what to install.
+This guide will help you get the code and set up KMPShip on your machine in just a few steps.
 
 ---
 
@@ -99,35 +81,32 @@ Follow this step-by-step guide:
 
 ---
 
-## Give your app a name
+## Run the setup script
 
-To ensure your app has a unique identity in the app stores and on users' devices, you'll want to give it a name and set a custom package/bundle ID.
-
-This is done by running the `configure.sh` script, which guides you through an interactive process to customize your project configuration, including project name, package name, and other settings.
+Now that you have the code and Firebase configured, run the setup script to configure your project.
 
 !!! warning "Important"
 
-    Make sure to commit your changes before running the configuration script. This script will modify multiple files, and it's best to have a backup in case you need to revert.
-
-### How to Run
+    Make sure to commit your changes before running the setup script. This script will modify multiple files, and it's best to have a backup in case you need to revert.
 
 1. Make the script executable (first time only):
 
 ```bash
-chmod +x configure.sh
+chmod +x scripts/setup.sh
 ```
 
 2. Run the script and follow the interactive prompts:
 
 ```bash
-./configure.sh
+./scripts/setup.sh
 ```
 
-3. **Optional**: Preview changes first without applying them:
+The script will:
 
-```bash
-./configure.sh --dry-run
-```
+- Check your development environment (installs and runs kdoctor to verify Xcode, Android Studio, etc.)
+- Ask if you want to run in **preview mode** (dry-run) to see changes without applying them
+- Guide you through configuring your project name and package name
+- Optionally rename package structure in source code (your choice during setup)
 
 After the script completes, go back to **Android Studio** and click on **"Sync Project with Gradle Files"** (the elephant icon) to ensure all changes are fully applied.
 
