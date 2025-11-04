@@ -19,9 +19,9 @@ Fastlane uses this API key to authenticate and submit builds.
     base64 -i AuthKey_XXXXXX.p8 | pbcopy
     ```
 8. Add the following repository secrets in GitHub:
-    * `APP_STORE_API_KEY_BASE64`: the base64 string of your `.p8` file
-    * `APP_STORE_ISSUER_ID`: the Issuer ID from App Store Connect
-    * `APP_STORE_KEY_ID`: the Key ID from App Store Connect
+    * `APP_STORE_CONNECT_API_KEY_B64`: the base64 string of your `.p8` file
+    * `APP_STORE_CONNECT_API_ISSUER_ID`: the Issuer ID from App Store Connect
+    * `APP_STORE_CONNECT_API_KEY_ID`: the Key ID from App Store Connect
 
 These secrets will be used by the GitHub Actions workflow to authenticate with App Store Connect and publish your updates.
 
