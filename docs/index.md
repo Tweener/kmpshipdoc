@@ -81,6 +81,24 @@ Follow this step-by-step guide:
 
 ---
 
+## Configure local properties
+
+Before running the setup script, set up your local configuration file:
+
+1. Rename the example file to create your local properties:
+
+```bash
+mv local.properties.example local.properties
+```
+
+This file contains all the environment variables you can configure for your project, including signing keys, API credentials, and other secrets needed for builds and releases.
+
+!!! tip "Keep it secure"
+
+    The `local.properties` file is already included in `.gitignore` to prevent committing sensitive credentials to your repository.
+
+---
+
 ## Run the setup script
 
 Now that you have the code and Firebase configured, run the setup script to configure your project.
