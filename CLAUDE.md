@@ -106,13 +106,13 @@ The site uses several pymdownx extensions:
 - Target audience: Kotlin Multiplatform developers using KMPShip
 - Tone: Technical but approachable, developer-friendly
 - Include code examples for technical concepts
-- Use admonitions to highlight important information (Pro Plan features, warnings, tips)
+- Use admonitions to highlight important information (Complete Plan features, warnings, tips)
 - Provide step-by-step instructions for tutorials
 - Reference specific file paths and locations when documenting code changes
 
 ## Important Notes
 
 - The site references the main KMPShip product repository at `github.com/TweenerLabs/kmp-ship`
-- Documentation distinguishes between Free Plan and Pro Plan features (marked with `<small>(Pro Plan)</small>`)
+- Documentation distinguishes between Starter Plan and Complete Plan features (marked with `<small>(Pro Plan)</small>`)
 - Firebase is a core dependency of KMPShip - most features require Firebase configuration
 - The documentation covers both Android Studio and Xcode workflows
