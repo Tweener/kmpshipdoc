@@ -124,10 +124,10 @@ This will be used by your CI/CD pipeline to deploy the app update automatically.
 
 ## Publish from your machine <small>(Optional)</small>
 
-To publish a release update manually from your local machine:
+To publish a release update manually from your local machine, you can use the release script for Android only:
 
 ```bash
-./gradlew :androidApp:publishReleaseBundle
+./release.sh android
 ```
 
 ---

@@ -85,11 +85,10 @@ Provisioning profiles link your distribution certificate to your app ID and enab
 
 ## Publish from your machine <small>(Optional)</small>
 
-You can use Fastlane to publish locally:
+To publish a release update manually from your local machine, you can use the release script for iOS only:
 
 ```bash
-cd iosApp
-fastlane release
+./release.sh ios
 ```
 
 ---
