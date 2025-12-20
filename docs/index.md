@@ -12,10 +12,28 @@ Follow these steps to get KMPShip set up locally.
 
 ### Clone the repository
 
-```bash
-git clone git@github.com:TweenerLabs/kmp-ship.git [YOUR_APP_NAME]
-cd [YOUR_APP_NAME]
-```
+Clone the repository that matches your plan:
+
+=== "Discover (Free)"
+
+    ```bash
+    git clone git@github.com:TweenerLabs/kmpship-free.git [YOUR_APP_NAME]
+    cd [YOUR_APP_NAME]
+    ```
+
+=== "MVP"
+
+    ```bash
+    git clone git@github.com:TweenerLabs/kmpship-mvp.git [YOUR_APP_NAME]
+    cd [YOUR_APP_NAME]
+    ```
+
+=== "Scale"
+
+    ```bash
+    git clone git@github.com:TweenerLabs/kmpship-scale.git [YOUR_APP_NAME]
+    cd [YOUR_APP_NAME]
+    ```
 
 Replace `[YOUR_APP_NAME]` with the desired name for your project folder.
 
