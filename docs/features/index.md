@@ -6,7 +6,7 @@ Explore what KMPShip includes. Some features may require configuration before us
 
 <div class="grid cards" markdown>
 
--   :fontawesome-regular-circle-user:{ .lg .middle } __User authentication__
+-   :fontawesome-regular-circle-user:{ .lg .middle } __User authentication__ <small>(Scale Plan)</small>
 
     ---
 
@@ -24,7 +24,7 @@ Explore what KMPShip includes. Some features may require configuration before us
 
     [:octicons-arrow-right-24: Setup navigation](/features/navigation)
 
--   :octicons-credit-card-24:{ .lg .middle } __Payments__
+-   :octicons-credit-card-24:{ .lg .middle } __Payments__ <small>(Scale Plan)</small>
 
     ---
 
@@ -32,7 +32,7 @@ Explore what KMPShip includes. Some features may require configuration before us
 
     [:octicons-arrow-right-24: Setup payments](/features/payments)
 
--   :material-bell-badge:{ .lg .middle } __Notifications__
+-   :material-bell-badge:{ .lg .middle } __Notifications__ <small>(MVP Plan)</small>
 
     ---
 
@@ -42,7 +42,7 @@ Explore what KMPShip includes. Some features may require configuration before us
 
     [:octicons-arrow-right-24: Setup notifications](/features/notifications)
 
--   :octicons-star-fill-24:{ .lg .middle } __In-App reviews__
+-   :octicons-star-fill-24:{ .lg .middle } __In-App reviews__ <small>(Scale Plan)</small>
 
     ---
 
@@ -51,7 +51,7 @@ Explore what KMPShip includes. Some features may require configuration before us
     [:octicons-arrow-right-24: Setup in-app reviews](/features/in-app-reviews)
 
 
--   :material-cog-sync:{ .lg .middle } __Remote config__
+-   :material-cog-sync:{ .lg .middle } __Remote config__ <small>(Scale Plan)</small>
 
     ---
 
@@ -59,7 +59,7 @@ Explore what KMPShip includes. Some features may require configuration before us
 
     [:octicons-arrow-right-24: Setup remote config](/features/remote-config)
 
--   :octicons-database-24:{ .lg .middle } __Local database__
+-   :octicons-database-24:{ .lg .middle } __Local database__ <small>(Scale Plan)</small>
 
     ---
 

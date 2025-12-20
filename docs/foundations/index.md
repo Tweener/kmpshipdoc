@@ -22,7 +22,7 @@ This section covers the technical foundations of your app, including Clean Archi
 
     [:octicons-arrow-right-24: Learn about dependency injection](/foundations/dependency-injection)
 
--   __Image fetching__
+-   __Image fetching__ <small>(MVP Plan)</small>
 
     ---
 
@@ -30,7 +30,7 @@ This section covers the technical foundations of your app, including Clean Archi
 
     [:octicons-arrow-right-24: Learn about image loading](/foundations/image-fetching)
 
--   __Networking__
+-   __Networking__ <small>(MVP Plan)</small>
 
     ---
 

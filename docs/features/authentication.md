@@ -1,6 +1,10 @@
-# Authentication
+# Authentication <small>(Scale Plan)</small>
 
 KMPShip includes built-in support for Firebase Authentication using [:simple-github: Passage](https://github.com/Tweener/passage/), allowing you to easily implement user authentication in your app.
+
+!!! info "Scale Plan required"
+
+    This feature is only available in the Scale Plan.
 
 ---
 

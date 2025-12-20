@@ -1,4 +1,8 @@
-# In-App Reviews
+# In-App Reviews <small>(Scale Plan)</small>
+
+!!! info "Scale Plan required"
+
+    This feature is only available in the Scale Plan.
 
 In-app reviews let users rate and review your app without leaving it, improving the chances of user feedback and higher store visibility.
 

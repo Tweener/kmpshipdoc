@@ -1,4 +1,8 @@
-# Local database
+# Local database <small>(Scale Plan)</small>
+
+!!! info "Scale Plan required"
+
+    This feature is only available in the Scale Plan.
 
 KMPShip uses [Room](https://developer.android.com/kotlin/multiplatform/room) for its local database solution on both Android and iOS. This enables you to persist and query structured data using a familiar, multiplatform approach.
 

@@ -1,4 +1,8 @@
-# Networking
+# Networking <small>(MVP Plan)</small>
+
+!!! info "MVP Plan required"
+
+    This feature is available starting from the MVP Plan.
 
 ---
 

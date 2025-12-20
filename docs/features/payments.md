@@ -1,4 +1,8 @@
-# Payments
+# Payments <small>(Scale Plan)</small>
+
+!!! info "Scale Plan required"
+
+    This feature is only available in the Scale Plan.
 
 KMPShip uses [RevenueCat](https://www.revenuecat.com/) to manage in-app purchases and subscriptions across platforms. Before using the payments feature, a few steps are required to configure your
 store accounts and RevenueCat dashboard.

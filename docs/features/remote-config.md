@@ -1,4 +1,8 @@
-# Remote config
+# Remote config <small>(Scale Plan)</small>
+
+!!! info "Scale Plan required"
+
+    This feature is only available in the Scale Plan.
 
 KMPShip integrates [Firebase Remote Config](https://firebase.google.com/docs/remote-config) to allow you to dynamically change the behavior and appearance of your app without requiring users to download an update.
 

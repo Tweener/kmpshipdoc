@@ -1,4 +1,8 @@
-# Notifications
+# Notifications <small>(MVP Plan)</small>
+
+!!! info "MVP Plan required"
+
+    This feature is available starting from the MVP Plan.
 
 KMPShip supports both **local** and **push notifications** using [:simple-github: Alarmee](https://github.com/Tweener/alarmee).
 This powerful abstraction handles platform differences and gives developers full control over how and when to notify users.

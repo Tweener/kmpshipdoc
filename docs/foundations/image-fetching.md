@@ -1,4 +1,8 @@
-# Image Fetching
+# Image Fetching <small>(MVP Plan)</small>
+
+!!! info "MVP Plan required"
+
+    This feature is available starting from the MVP Plan.
 
 KMPShip integrates image loading using [**Coil**](https://coil-kt.github.io/coil/), a multiplatform image loader built for Compose.
 
