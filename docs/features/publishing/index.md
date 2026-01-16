@@ -10,7 +10,7 @@ This section provides guidance on how to publish your app on both the Google Pla
 
     ---
 
-    KMPShip supports automated App Store deployment with Fastlane. Just complete a few setup steps to get started.
+    KMPShip supports automated App Store deployment with Fastlane. Complete a few setup steps to get started.
 
     [:octicons-arrow-right-24: Configure App Store publishing](/features/publishing/app-store)
 
@@ -18,7 +18,7 @@ This section provides guidance on how to publish your app on both the Google Pla
 
     ---
 
-    KMPShip is ready for automated Google Play deployment via GitHub Actions. You just need to complete a few one-time setup steps.
+    KMPShip supports automated Google Play deployment with Fastlane. Complete a few setup steps to get started.
 
     [:octicons-arrow-right-24: Configure Google Play publishing](/features/publishing/google-play)
 

@@ -2,6 +2,8 @@
 
 When you're ready to publish a new version of your app to the stores, you can choose between two release methods: automated releases via GitHub Actions or manual releases from your local machine.
 
+Both Android and iOS release processes are powered by [Fastlane](https://fastlane.tools/), which automates building, signing, and uploading your app to the respective stores.
+
 ---
 
 ## Update the version name
@@ -102,6 +104,10 @@ From your project root, run the release script with the desired platform:
 
     This will release to both Google Play and App Store Connect sequentially.
 
+    !!! tip "Default behavior"
+
+        Running `./scripts/release.sh` without any argument will also release to both stores.
+
 === "Android only"
 
     ```bash
@@ -126,18 +132,19 @@ The release script automates the following steps:
 
 1. Decodes and sets up the release keystore
 2. Decodes the Google Play uploader JSON key
-3. Builds and publishes the release bundle to Google Play Console
+3. Verifies Ruby and Fastlane installation
+4. Runs Fastlane `release` lane to build and publish to Google Play Console
 
 **For iOS:**
 
-1. Verifies Ruby installation for Fastlane
+1. Verifies Ruby and Fastlane installation
 2. Decodes and sets up the App Store Connect API key
 3. Sets up iOS provisioning profiles and certificates
-4. Runs Fastlane to build and upload to App Store Connect
+4. Runs Fastlane `release` lane to build and upload to App Store Connect
 
-!!! tip "Ruby requirement for iOS"
+!!! tip "Ruby requirement"
 
-    The iOS release requires Ruby 3.1 or later. Make sure Ruby is installed on your machine before running iOS releases.
+    Both Android and iOS releases require Ruby 3.1 or later, as Fastlane is used for the release process on both platforms. Make sure Ruby is installed on your machine before running releases.
 
 !!! warning "Keystore and certificates"
 

@@ -73,7 +73,7 @@ Provisioning profiles link your distribution certificate to your app ID and enab
 
 ---
 
-## Step 5: Configure CI/CD
+## Step 4: Configure CI/CD
 
 ### Configure Xcode version
 
@@ -88,11 +88,11 @@ Provisioning profiles link your distribution certificate to your app ID and enab
 To publish a release update manually from your local machine, you can use the release script for iOS only:
 
 ```bash
-./release.sh ios
+./scripts/release.sh ios
 ```
 
 ---
 
-!!! success "Aoo Store Connect setup complete"
+!!! success "App Store Connect setup complete"
 
     You have successfully set up the automated publishing process for your app to the App Store Connect. You can now push updates directly from your CI/CD pipeline or manually from your local machine.

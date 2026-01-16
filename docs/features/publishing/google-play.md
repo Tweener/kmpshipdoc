@@ -1,6 +1,6 @@
 # Publishing on Google Play (Android)
 
-KMPShip comes preconfigured for automated deployment to the Google Play Console using GitHub Actions. However, it still requires a few one-time manual configuration steps to securely connect the app to the Play Console and prepare it for publishing.
+KMPShip includes a preconfigured Fastlane setup for automating your Android app deployment to Google Play Console. To use it, you'll need to complete a few initial configuration steps, such as setting up your keystore and creating a service account for authentication.
 
 ---
 
@@ -127,7 +127,7 @@ This will be used by your CI/CD pipeline to deploy the app update automatically.
 To publish a release update manually from your local machine, you can use the release script for Android only:
 
 ```bash
-./release.sh android
+./scripts/release.sh android
 ```
 
 ---
