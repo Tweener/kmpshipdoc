@@ -94,35 +94,47 @@ IOS_APP_CERTIFICATE_P12_PASSWORD=<certificate-password>
 
 ### Running the release script
 
-From your project root, run the release script with the desired platform:
+From your project root, run the release script with the desired platform and track/destination:
+
+```bash
+# Usage: ./scripts/release.sh [android|ios|all] [track/destination] [ios_destination]
+```
+
+=== "Android"
+
+    ```bash
+    # Android releases (track: internal, alpha, beta, or production)
+    ./scripts/release.sh android              # internal track (default)
+    ./scripts/release.sh android production   # production track
+    ./scripts/release.sh android beta         # beta track
+    ./scripts/release.sh android alpha        # alpha track
+    ```
+
+    This will release to Google Play Console on the specified track.
+
+=== "iOS"
+
+    ```bash
+    # iOS releases (destination: testflight or production)
+    ./scripts/release.sh ios                  # TestFlight (default)
+    ./scripts/release.sh ios production       # App Store production
+    ```
+
+    This will release to App Store Connect with the specified destination.
 
 === "Both platforms"
 
     ```bash
+    # Both platforms with defaults (Android: internal, iOS: testflight)
     ./scripts/release.sh all
+
+    # Both platforms with custom settings
+    # Second param: Android track, Third param: iOS destination
+    ./scripts/release.sh all production production   # Android to production, iOS to production
+    ./scripts/release.sh all beta testflight         # Android to beta, iOS to testflight
     ```
 
     This will release to both Google Play and App Store Connect sequentially.
-
-    !!! tip "Default behavior"
-
-        Running `./scripts/release.sh` without any argument will also release to both stores.
-
-=== "Android only"
-
-    ```bash
-    ./scripts/release.sh android
-    ```
-
-    This will only release to Google Play Console.
-
-=== "iOS only"
-
-    ```bash
-    ./scripts/release.sh ios
-    ```
-
-    This will only release to App Store Connect.
 
 ### What the script does
 
